@@ -11,7 +11,7 @@
         </commentGenerator>
         <!-- 数据库链接URL、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-        connectionURL="jdbc:mysql://localhost:3306/Stock" userId="root" password="Scott8an" />
+        connectionURL="jdbc:mysql://localhost:3306/jihejingjia" userId="root" password="luck" />
         
         <!-- 生成模型的包名和位置 -->
         <javaModelGenerator targetPackage="com.scottban.jihejingjia.bean" targetProject="jihejingjiaServer/src/main/java" />
@@ -28,20 +28,8 @@
             <columnOverride column="phoneNumber" property="phoneNumber" />
             <columnOverride column="nickName" property="nickName" />
         </table>
-        <table tableName="StockModel" domainObjectName="StockModel" enableCountByExample="false" enableUpdateByExample="false"
+        <table tableName="Article" domainObjectName="Article" enableCountByExample="false" enableUpdateByExample="false"
             enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-<!--            <columnOverride column="TYPEID" property="TYPEID" />-->
-<!--            <columnOverride column="TYPENAME" property="TYPENAME" />-->
-        </table>
-        <table tableName="JuheStock" domainObjectName="JuheStock" enableCountByExample="false" enableUpdateByExample="false"
-            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <!--            <columnOverride column="TYPEID" property="TYPEID" />-->
-            <!--            <columnOverride column="TYPENAME" property="TYPENAME" />-->
-        </table>
-        <table tableName="SinaStock" domainObjectName="SinaStock" enableCountByExample="false" enableUpdateByExample="false"
-            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <!--            <columnOverride column="TYPEID" property="TYPEID" />-->
-            <!--            <columnOverride column="TYPENAME" property="TYPENAME" />-->
         </table>
     </context>
 </generatorConfiguration>
